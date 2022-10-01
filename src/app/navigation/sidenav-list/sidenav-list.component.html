@@ -1,10 +1,10 @@
 <mat-nav-list>
 
-    <a mat-list-item routerLink="/login">
+    <a mat-list-item routerLink="/login" (click)="onToggleClose()">
     <mat-icon>input</mat-icon>
     <span>Login</span>
     </a>
-    <a mat-list-item routerLink="/register">
+    <a mat-list-item routerLink="/register" (click)="onToggleClose()">
         <mat-icon>account_circle</mat-icon>
         <span>Register</span>
     </a>
