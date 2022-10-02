@@ -14,6 +14,7 @@ import { RegisterComponent } from './register/register.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { BookingComponent } from './booking/booking.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     LoginComponent,
     RegisterComponent,
     SidenavListComponent,
-    NavtabsComponent
+    NavtabsComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
