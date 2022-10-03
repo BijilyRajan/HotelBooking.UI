@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ContractService } from '../contract.service';
+import { Room } from '../model/room.model';
 
 @Component({
   selector: 'app-booking',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookingComponent implements OnInit {
 
-  constructor() { }
+  rooms!: Room[];
+  fromDate!:string;
+  toDate!:string;
+
+  constructor(private contractService: ContractService) { 
+    this.contractService.getRooms(this.fromDate, this.toDate).subscribe(result => this.rooms = result);
+  }
 
   ngOnInit(): void {
   }
+
+
 
 }

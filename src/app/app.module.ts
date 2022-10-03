@@ -15,6 +15,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BookingComponent } from './booking/booking.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BookingComponent } from './booking/booking.component';
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
