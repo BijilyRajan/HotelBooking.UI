@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BookingComponent } from './booking/booking.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HotelComponent } from './hotel/hotel.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     SidenavListComponent,
     NavtabsComponent,
-    BookingComponent
+    BookingComponent,
+    HotelComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     MaterialModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

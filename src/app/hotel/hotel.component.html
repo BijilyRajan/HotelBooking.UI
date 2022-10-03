@@ -1,0 +1,63 @@
+<!-- 
+<mat-form-field class ="city-search" appearance="standard" >
+    <mat-label>Seach City:</mat-label>
+    <input matInput type="text" [(ngModel)]="searchContent" aria-label="Transit" autofocus  />
+ </mat-form-field>
+
+ <button  mat-raised-button 
+     (click)="searchHotel()">Find
+     <mat-icon mat-list-icon matTooltip="Search">search</mat-icon>
+ </button> -->
+
+ <mat-form-field appearance="standard" >
+    <mat-label>City:</mat-label>
+    <mat-select [(ngModel)]="searchContent">
+        <mat-option value="Munnar">
+          Munnar
+        </mat-option>
+        <mat-option value="Cochin">
+          Cochin
+        </mat-option>
+        <mat-option value="Santiago">
+          Santiago
+        </mat-option>
+        <mat-option value="StJohns">
+          StJohns
+        </mat-option>
+      </mat-select>
+ </mat-form-field>
+
+
+ <button  mat-raised-button 
+ (click)="searchHotel()">Find
+ <mat-icon mat-list-icon matTooltip="Search">search</mat-icon> 
+</button>
+
+
+ <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let hotel of hotels" >
+        <mat-card class="hotel-card"  >
+
+            <!-- <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px">
+  <mat-card *ngFor="let hotel of hotels" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" > -->
+
+            <mat-card-title>{{ hotel.hotelName }}</mat-card-title>
+            <mat-card-subtitle>{{ hotel.city }}</mat-card-subtitle>
+          <img mat-card-image [src]='"/assets/Images/"+hotel.imageName+".JPG"'>
+          <mat-card-content>
+
+          </mat-card-content>
+          <mat-card-actions>
+            <button class="offer-button" mat-button>View Offer</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+    </div>
+
+
+
+    
+
+

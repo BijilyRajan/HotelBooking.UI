@@ -9,6 +9,10 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
     imports:[
@@ -20,7 +24,11 @@ import { MatCardModule } from '@angular/material/card';
         MatTabsModule,
         MatGridListModule,
         MatExpansionModule,
-        MatCardModule
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSelectModule,
+        MatSnackBarModule
     ],
     exports:[
         MatToolbarModule, 
@@ -31,7 +39,11 @@ import { MatCardModule } from '@angular/material/card';
         MatTabsModule,
         MatGridListModule,
         MatExpansionModule,
-        MatCardModule
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSelectModule,
+        MatSnackBarModule
     ]
 })
 
