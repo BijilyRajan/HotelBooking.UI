@@ -4,10 +4,10 @@
         <mat-card class="mat-elevation-z4" >
             <mat-card-title>{{ room.roomType }}</mat-card-title>
             <mat-card-subtitle>{{ room.roomName }}</mat-card-subtitle>
-          <img mat-card-image src="/assets/Images/home_beach.jpg">
+          <img mat-card-image [src]='"/assets/Images/"+room.imageName+".JPG"'>
           <mat-card-content>
             <p>
-              The Himalayas is a mountain range in Asia.
+              There are only {{room.availabileRooms}} available with an average price Rs. {{room.rate}}
             </p>
           </mat-card-content>
           <mat-card-actions>
