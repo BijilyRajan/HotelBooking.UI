@@ -13,8 +13,8 @@ export class ContractService  {
   constructor(private http: HttpClient) {
   }
 
-  getRooms(fromDate:string, toDate:string): Observable<Room[]> {
-    var requestUrl: string = `https://localhost:7147/Booking` + '/GetRooms?fromDate=' + fromDate+'&toDate='+toDate;
+  getRooms(hotelId:number): Observable<Room[]> {
+    var requestUrl: string = `https://localhost:7147/Booking` + '/GetRooms?hotelId=' + hotelId;
     console.log(requestUrl);
     return this.http.get<Room[]>(requestUrl);
   }

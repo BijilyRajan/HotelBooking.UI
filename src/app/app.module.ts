@@ -18,6 +18,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BookingComponent } from './booking/booking.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HotelComponent } from './hotel/hotel.component';
+import { HoteldetailsComponent } from './hoteldetails/hoteldetails.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HotelComponent } from './hotel/hotel.component';
     SidenavListComponent,
     NavtabsComponent,
     BookingComponent,
-    HotelComponent
+    HotelComponent,
+    HoteldetailsComponent
   ],
   imports: [
     BrowserModule,

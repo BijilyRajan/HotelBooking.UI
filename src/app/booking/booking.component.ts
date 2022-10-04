@@ -14,7 +14,7 @@ export class BookingComponent implements OnInit {
   toDate!:string;
 
   constructor(private contractService: ContractService) { 
-    this.contractService.getRooms(this.fromDate, this.toDate).subscribe(result => this.rooms = result);
+    // this.contractService.getRooms(this.fromDate, this.toDate).subscribe(result => this.rooms = result);
   }
 
   ngOnInit(): void {
